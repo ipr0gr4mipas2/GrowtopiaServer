@@ -417,6 +417,7 @@ public:
 	void CreatePacket(ENetPeer* peer) {
 		ENetPacket* packet = enet_packet_create(packet_data, len, 1);
 		enet_peer_send(peer, 0, packet);
+		delete[] packet_data;
 	}
 };
 
