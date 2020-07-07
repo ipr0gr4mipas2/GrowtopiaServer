@@ -3243,6 +3243,7 @@ label|Download Latest Version
 						loadnews();//To load news instead of close server and run it again
 					}
 					else if (str.substr(0, 6) == "/nick ") {
+						if (getAdminLevel(((PlayerInfo*)(peer->data))->rawName, ((PlayerInfo*)(peer->data))->tankIDPass) > 0) {
 						string nam1e = "``" + str.substr(6, cch.length() - 6 - 1) + "``";
 						((PlayerInfo*)(event.peer->data))->displayName = str.substr(6, cch.length() - 6 - 1);
 						gamepacket_t p(0, ((PlayerInfo*)(peer->data))->netID);
