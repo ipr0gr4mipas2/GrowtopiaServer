@@ -3262,6 +3262,7 @@ label|Download Latest Version
 							}
 						}
 					}
+					}
 						else if (str.substr(0, 5) == "/gem ") //gem if u want flex with ur gems!
 						{
 						gamepacket_t p;
