@@ -627,6 +627,9 @@ WorldInfo generateWorld(string name, int width, int height)
 			world.items[i].foreground = 2;
 			world.items[i].background = 14;
 		}
+		
+		if (i == 3750)
+			world.items[i].foreground = 6;
 
 		if (i >= 3100 && i <= 5000) {
 			world.items[i].foreground = rand() % 75 > 1 ? 2 : 10;
