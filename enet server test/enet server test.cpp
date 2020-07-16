@@ -599,7 +599,7 @@ WorldInfo generateWorld(string name, int width, int height)
 	world.items = new WorldItem[world.width*world.height];
 	for (int i = 0; i < world.width*world.height; i++)
 	{
-		if (i >= 3800 && i < 5400 && !(rand() % 50)){ world.items[i].foreground = 10; }
+		/*if (i >= 3800 && i < 5400 && !(rand() % 50)){ world.items[i].foreground = 10; }
 		else if (i >= 3700 && i < 5400) {
 			if(i > 5000) {
 				if (i % 7 == 0) { world.items[i].foreground = 4;}
@@ -615,7 +615,23 @@ WorldInfo generateWorld(string name, int width, int height)
 		else if (i >= 3600 && i<3700)
 			world.items[i].foreground = 0; //fixed the grass in the world!
 		if (i == 3750)
+			world.items[i].foreground = 8;*/
+		if (i >= 5000 && i < 5000) {
+			int num = rand() % 75;
+			world.items[i].foreground = num > 20 ? 2 : (num > 7 ? 4 : 10);
+			world.items[i].background = 14;
+		} else if (i >= 5500) {
 			world.items[i].foreground = 8;
+			world.items[i].background = 14;
+		} else if (i > = 3000) {
+			world.items[i].foreground = 2;
+			world.items[i].background = 14;
+		}
+
+		if (i >= 3100 && i <= 5000) {
+			world.items[i].foreground = rand() % 75 > 1 ? 2 : 10;
+			world.items[i].background = 14;
+		}
 	}
 	return world;
 }
