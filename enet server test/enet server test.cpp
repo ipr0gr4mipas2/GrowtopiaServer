@@ -598,6 +598,7 @@ WorldInfo generateWorld(string name, int width, int height)
 	world.width = width;
 	world.height = height;
 	world.items = new WorldItem[world.width*world.height];
+	int white_door_pos = (rand() % 100) + 2900; // choose a random tile from above the last dirt layer
 	for (int i = 0; i < world.width*world.height; i++)
 	{
 		/*if (i >= 3800 && i < 5400 && !(rand() % 50)){ world.items[i].foreground = 10; }
@@ -628,14 +629,17 @@ WorldInfo generateWorld(string name, int width, int height)
 			world.items[i].foreground = 2;
 			world.items[i].background = 14;
 		}
-		
-		if (i == 3750)
-			world.items[i].foreground = 6;
 
 		if (i >= 3100 && i <= 5000) {
 			world.items[i].foreground = rand() % 75 > 1 ? 2 : 10;
 			world.items[i].background = 14;
 		}
+		
+		if (i == white_door_pos)
+			world.items[i].foreground = 6;
+		
+		if (i === white_door_pos + 100) // bedrock below main door
+			world.items[i].foreground = 8;
 	}
 	return world;
 }
