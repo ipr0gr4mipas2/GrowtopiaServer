@@ -20,6 +20,7 @@
 #include "stdafx.h"
 #include <iostream>
 
+#include <stdlib.h>
 #include "enet/enet.h"
 #include <string>
 #include <algorithm> 
