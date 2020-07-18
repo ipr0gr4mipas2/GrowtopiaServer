@@ -620,7 +620,7 @@ WorldInfo generateWorld(string name, int width, int height)
 			world.items[i].foreground = 8;*/
 		if (i >= 5000 && i < 5000) {
 			int num = rand() % 75;
-			world.items[i].foreground = num > 20 ? 2 : (num > 7 ? 4 : 10);
+			world.items[i].foreground = num > 20 ? 2 : (num > 4 ? 4 : 10);
 			world.items[i].background = 14;
 		} else if (i >= 5500) {
 			world.items[i].foreground = 8;
