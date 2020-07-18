@@ -638,7 +638,7 @@ WorldInfo generateWorld(string name, int width, int height)
 		if (i == white_door_pos)
 			world.items[i].foreground = 6;
 		
-		if (i === white_door_pos + 100) // bedrock below main door
+		if (i == white_door_pos + 100) // bedrock below main door
 			world.items[i].foreground = 8;
 	}
 	return world;
