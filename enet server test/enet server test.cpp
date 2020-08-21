@@ -61,6 +61,9 @@ char _getch() {
 #endif
 #include <thread> // TODO
 #include <mutex> // TODO
+#ifdef __APPLE__
+#include <sys/uio.h>
+#endif
 
 #pragma warning(disable : 4996)
 
