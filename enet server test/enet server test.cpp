@@ -102,7 +102,7 @@ ulong _byteswap_ulong(ulong x)
 
 //configs
 int configPort = 17091;
-string configCDN = "0098/CDNContent77/cache/"; 
+string configCDN = "0098/CDNContent89/cache/"; 
 
 
 /***bcrypt***/
@@ -2625,7 +2625,7 @@ void loadConfig() {
 			cout << "Config loaded." << endl;
 		} catch (...) {
 			cout << "Invalid Config, Fixing..." << endl;
-			string config_contents = "{ \"port\": 17091, \"cdn\": \"0098/CDNContent77/cache/\" }";
+			string config_contents = "{ \"port\": 17091, \"cdn\": \"0098/CDNContent89/cache/\" }";
 
 			ofstream myfile1;
 			myfile1.open("config.json");
@@ -2643,7 +2643,7 @@ void loadConfig() {
 		}
 	} else {
 		cout << "Config not found, Creating..." << endl;
-		string config_contents = "{ \"port\": 17091, \"cdn\": \"0098/CDNContent77/cache/\" }";
+		string config_contents = "{ \"port\": 17091, \"cdn\": \"0098/CDNContent89/cache/\" }";
 
 		ofstream myfile1;
 		myfile1.open("config.json");
