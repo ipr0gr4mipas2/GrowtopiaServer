@@ -21,4 +21,9 @@ jobs:
         run: |
              cd "enet server test"
              ls
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: GrowtopiaServer
+          path: "server enet test/server enet test"
              
