@@ -13,7 +13,7 @@ jobs:
 
       - name: building
         run: | 
-              apt-get install build-essential
+           
               chmod +x ./build.sh
               ./build.sh
        
