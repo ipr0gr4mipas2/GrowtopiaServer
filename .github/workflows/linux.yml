@@ -1,25 +1,22 @@
-# This is a basic workflow to help you get started with Actions
+name: iOS build
 
-name: CI
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  workflow_dispatch
 jobs:
- 
   build:
     runs-on: ubuntu-latest
+    steps:
+ 
 
+      - name: Set up build environment
+        uses: actions/checkout@v2
+
+      - name: building
+        run: | 
+              apt-get install build-essential
+              chmod +x ./build.sh
+              ./build.sh
+       
       
-     
-      - uses: actions/checkout@v2
-
-      - name: Run a one-line script
-        run: |
-             chmod +x ./build.sh
-             apt-get install build-essential
-             ./build.sh
-
-      - name: checking dirs
+      - name: checking directories
         run: ls
