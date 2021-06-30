@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up build environment pt. III
-        run: apt-get install build-essential
+        run: brew install build-essential
 
 
       - name: building
