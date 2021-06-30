@@ -1,4 +1,3 @@
-sudo apt-get install build-essential
 cd "enet server test"
 cd "enet2"
 sudo apt install cmake
