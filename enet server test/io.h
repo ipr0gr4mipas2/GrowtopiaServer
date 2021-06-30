@@ -15,7 +15,7 @@
    02111-1307 USA.  */
 #ifndef	_SYS_IO_H
 #define	_SYS_IO_H	1
-#include <features.h>
+#include "features.h"
 __BEGIN_DECLS
 /* If TURN_ON is TRUE, request for permission to do direct i/o on the
    port numbers in the range [FROM,FROM+NUM-1].  Otherwise, turn I/O
