@@ -1,6 +1,5 @@
 cd "enet server test"
 cd "enet2"
-sudo apt install cmake
 cmake CMakeLists.txt
 make
 cp libenet.a ../libenet.a
