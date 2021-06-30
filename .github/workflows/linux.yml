@@ -25,5 +25,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: GrowtopiaServer
-          path: "server enet test/server enet test"
+          path: "enet server test/enet server test"
              
