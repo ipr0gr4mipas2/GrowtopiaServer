@@ -1,3 +1,4 @@
+cd "enet server test"
 cd "enet2"
 sudo apt install cmake
 cmake CMakeLists.txt
