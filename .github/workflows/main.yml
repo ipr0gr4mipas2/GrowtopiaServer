@@ -13,12 +13,8 @@ jobs:
          
        
 
-      - name: Set up build environment pt. II
+      - name: Set up build environment
         uses: actions/checkout@v2
-
-      - name: Set up build environment pt. III
-        run: brew install build-essential
-
 
       - name: building
         run: | 
